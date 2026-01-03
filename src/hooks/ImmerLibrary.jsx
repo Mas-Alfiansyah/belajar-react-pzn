@@ -1,7 +1,21 @@
 import CodeSnippet from "../components/CodeSnippet";
+import { useImmer } from "use-immer";
 
 export default function ImmerLibrary() {
     const codeImmer = `npm install immer use-immer`;
+    const codeStateAwal = `const [contact, setContact] = useState(initialContact);`;
+    const codeStateAkhir = `const [contact, updateContact] = useImmer(initialContact);`;
+    const codeFunction = `function handleChangeName(e) {
+        setContact({
+            ...contact,
+            nama: e.target.value
+        })
+    }`;
+    const codeFunctionfix = `function handleChangeName(e) {
+        setContact(draft =>{
+            draft.nama = e.target.value;
+        })
+    }`;
     return (
         <>
             <h1 className="text-3xl font-semibold">Immer Library</h1>
@@ -32,6 +46,32 @@ export default function ImmerLibrary() {
                 fileName="Bash"
             />
             <p>Jadi sekarang kita revisi Contact Form yang ada di menu Object Di State</p>
+            <p>Jadi yang harus kita ubah itu adalah state nya dan function handleChangeName, handleChangeEmail, handleChangePesan</p>
+            <p>yang yang pertama kita ubah yang state nya</p>
+            <CodeSnippet
+                code={codeStateAwal}
+                language="javascript"
+                fileName="ContactForm.jsx"
+            />
+            <p>Jadi kayak gini</p>
+            <CodeSnippet
+                code={codeStateAkhir}
+                language="javascript"
+                fileName="ContactForm.jsx"
+            />
+            <p>Kemudian yang setiap function nya itu yang awal nya kayak gini</p>
+            <CodeSnippet
+                language="javascript"
+                code={codeFunction}
+                fileName="ImmerLibrary.jsx"
+            />
+            <p>Diubah jadi kayak gini</p>
+            <CodeSnippet
+                code={codeFunctionfix}
+                language="javascript"
+                fileName="ImmerLibrary.jsx"
+            />
+            <p>kemudian pada function yang lain itu juga diterapkan juga. Dan hasil nya akan jadi seperti ini</p>
             <ContactForm />
         </>
     )
@@ -48,24 +88,21 @@ const initialContact = {
 }
 
 function ContactForm() {
-    const [contact, setContact] = useState(initialContact);
+    const [contact, setContact] = useImmer(initialContact);
 
     function handleChangeName(e) {
-        setContact({
-            ...contact,
-            nama: e.target.value
+        setContact(draft => {
+            draft.nama = e.target.value;
         })
     }
     function handleChangeEmail(e) {
-        setContact({
-            ...contact,
-            email: e.target.value
+        setContact(draft => {
+            draft.email = e.target.value;
         })
     }
     function handleChangePesan(e) {
-        setContact({
-            ...contact,
-            pesan: e.target.value
+        setContact(draft => {
+            draft.pesan = e.target.value;
         })
     }
     return (

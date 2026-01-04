@@ -20,6 +20,7 @@ import StateUpdate from './hooks/StateUpdate';
 import ObjectDiState from './hooks/ObjectDiState';
 import NestedObject from './hooks/NestedObject';
 import ImmerLibrary from './hooks/ImmerLibrary';
+import ArrayDiState from './hooks/ArrayDiState';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/object-di-state' element={<ObjectDiState/>}/>
           <Route path='/nested-object' element={<NestedObject/>}/>
           <Route path='/immer-library' element={<ImmerLibrary/>}/>
+          <Route path='/array-di-state' element={<ArrayDiState/>}/>
         </Routes>
       </Container>
   )

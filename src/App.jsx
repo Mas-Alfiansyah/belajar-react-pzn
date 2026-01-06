@@ -21,6 +21,7 @@ import ObjectDiState from './hooks/ObjectDiState';
 import NestedObject from './hooks/NestedObject';
 import ImmerLibrary from './hooks/ImmerLibrary';
 import ArrayDiState from './hooks/ArrayDiState';
+import SharingState from './hooks/sharing/SharingState';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
           <Route path='/nested-object' element={<NestedObject/>}/>
           <Route path='/immer-library' element={<ImmerLibrary/>}/>
           <Route path='/array-di-state' element={<ArrayDiState/>}/>
+          <Route path='/sharing-state' element={<SharingState/>}/>
         </Routes>
       </Container>
   )

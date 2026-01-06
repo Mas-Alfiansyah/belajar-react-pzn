@@ -133,6 +133,7 @@ function Sidebar({ isOpen, onClose }) {
                 { path: '/nested-object', label: 'Nested Object' },
                 { path: '/immer-library', label: 'Immer Library' },
                 { path: '/array-di-state', label: 'Array Di State' },
+                { path: '/sharing-state', label: 'Sharing State' },
             ]
         },
 

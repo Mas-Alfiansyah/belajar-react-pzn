@@ -134,6 +134,7 @@ function Sidebar({ isOpen, onClose }) {
                 { path: '/immer-library', label: 'Immer Library' },
                 { path: '/array-di-state', label: 'Array Di State' },
                 { path: '/sharing-state', label: 'Sharing State' },
+                { path: '/mempertahankan-state', label: 'Mempertahankan State' },
             ]
         },
 

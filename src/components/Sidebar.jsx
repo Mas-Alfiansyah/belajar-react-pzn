@@ -135,6 +135,7 @@ function Sidebar({ isOpen, onClose }) {
                 { path: '/array-di-state', label: 'Array Di State' },
                 { path: '/sharing-state', label: 'Sharing State' },
                 { path: '/mempertahankan-state', label: 'Mempertahankan State' },
+                { path: '/reset-state', label: 'Reset State' },
             ]
         },
 

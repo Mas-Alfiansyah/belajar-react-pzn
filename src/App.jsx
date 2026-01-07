@@ -23,6 +23,7 @@ import ImmerLibrary from './hooks/ImmerLibrary';
 import ArrayDiState from './hooks/ArrayDiState';
 import SharingState from './hooks/sharing/SharingState';
 import MempertahankanState from './hooks/MempertahankanState';
+import ResetState from './hooks/ResetState';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
           <Route path='/array-di-state' element={<ArrayDiState/>}/>
           <Route path='/sharing-state' element={<SharingState/>}/>
           <Route path='/mempertahankan-state' element={<MempertahankanState/>}/>
+          <Route path='/reset-state' element={<ResetState/>}/>
         </Routes>
       </Container>
   )

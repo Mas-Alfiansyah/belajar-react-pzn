@@ -24,6 +24,7 @@ import ArrayDiState from './hooks/ArrayDiState';
 import SharingState from './hooks/sharing/SharingState';
 import MempertahankanState from './hooks/MempertahankanState';
 import ResetState from './hooks/ResetState';
+import Reducer from './use/reducer/Reducer';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
           <Route path='/sharing-state' element={<SharingState/>}/>
           <Route path='/mempertahankan-state' element={<MempertahankanState/>}/>
           <Route path='/reset-state' element={<ResetState/>}/>
+          <Route path='/reducer' element={<Reducer/>}/>
         </Routes>
       </Container>
   )

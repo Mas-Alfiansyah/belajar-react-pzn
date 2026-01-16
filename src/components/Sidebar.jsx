@@ -145,6 +145,7 @@ function Sidebar({ isOpen, onClose }) {
             children: [
                 { path: '/reducer-note-app', label: 'Reducer Note App' },
                 { path: '/reducer-app', label: 'Reducer App' },
+                { path: '/context-app', label: 'Context App' },
             ]
         },
 

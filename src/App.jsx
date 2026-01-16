@@ -26,6 +26,7 @@ import MempertahankanState from './hooks/MempertahankanState';
 import ResetState from './hooks/ResetState';
 import ReducerNoteApp from './use/reducer/ReducerNoteApp';
 import ReducerApp from './use/reducer-shop/ReducerApp';
+import ContextApp from './use/context/ContextApp';
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
           <Route path='/reset-state' element={<ResetState/>}/>
           <Route path='/reducer-note-app' element={<ReducerNoteApp/>}/>
           <Route path='/reducer-app' element={<ReducerApp/>}/>
+          <Route path='/context-app' element={<ContextApp/>}/>
         </Routes>
       </Container>
   )

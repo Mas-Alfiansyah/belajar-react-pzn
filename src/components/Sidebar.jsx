@@ -143,7 +143,8 @@ function Sidebar({ isOpen, onClose }) {
                 </svg>
             ),
             children: [
-                { path: '/reducer', label: 'Reducer' },
+                { path: '/reducer-note-app', label: 'Reducer Note App' },
+                { path: '/reducer-app', label: 'Reducer App' },
             ]
         },
 

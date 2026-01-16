@@ -1,5 +1,5 @@
 import { useImmer } from "use-immer";
-import CodeSnippet from "../components/CodeSnippet";
+import CodeSnippet from "../../components/CodeSnippet";
 import SharingForm from "./SharingForm";
 import SharingList from "./SharingList";
 
